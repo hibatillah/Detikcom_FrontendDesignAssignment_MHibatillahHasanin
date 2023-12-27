@@ -1,0 +1,67 @@
+:root {
+  --clr-primary: #326cff;
+  --clr-secondary: #4dd3ce;
+  --clr-white: #fff;
+  --clr-dark: #000;
+  --gradient:
+    rgb(50,108,255),
+    linear-gradient(336deg, rgba(50,108,255,1) 33%, rgba(77,211,206,1) 75%);
+}
+
+body {
+  background-color: var(--gradient);
+}
+
+nav.navbar {
+  top: 40px;
+  left: 50%;
+  width: 70vw;
+  transform: translateX(-50%);
+  background-color: #ffffff15;
+  border: 1px solid #1f1f1f10;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.navbar-brand img {
+  width: 180px;
+}
+
+#navbarCollapse {
+  flex: 0 0 auto;
+}
+
+li.nav-item {
+  display: block;
+  height: 30px;
+  padding: 12px 2px 28px 2px;
+}
+
+a.nav-link {
+  display: block;
+  padding: 0 0;
+  line-height: 1;
+}
+
+li.nav-item:hover:not(.bg-gradient) {
+  background-color: #ffffff90;
+  outline: 1px solid #ffffff60;
+  color: var(--clr-dark);
+  cursor: pointer;
+}
+
+.bg-gradient {
+  background-color: rgb(50,108,255);
+  background-color: linear-gradient(to right, rgba(50,108,255,1), rgba(77,211,206,1));
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.bg-gradient:hover {
+  background-color: rgb(50,108,255);
+  background-color: linear-gradient(to left, rgba(50,108,255,1), rgba(77,211,206,1));
+}
+
+:is(.bg-gradient, .bg-gradient:hover) > :is(a, p) {
+  color: var(--clr-white);
+}
