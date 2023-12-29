@@ -74,7 +74,7 @@
           </h1>
           <div id="presented">
             <p class="text-black">Presented by</p>
-            <img src="assets/logo.png" alt="logo detik health">
+            <img src="assets/logo.png" alt="logo detik health" />
           </div>
           <a href="#acara" class="btn-main">Tentang Acara</a>
         </div>
@@ -84,14 +84,18 @@
       <section id="acara" class="container mx-auto p-5">
         <div class="row g-5">
           <!-- kiri -->
-          <div class="col-12 col-md-6 p-4 bg-gradient rounded-4">
+          <div
+            id="kiri"
+            class="col-12 col-md-6 d-flex flex-column gap-4 p-4 bg-gradient rounded-4">
             <img src="" alt="" />
-            <h2>10K Fun Run</h2>
-            <p>
-              Dimulai pukul 6 pagi, nikmati pemandangan kota di pagi hari
-              dimulai dari Bundaran HI hingga Patung Pemuda Membangun di Senayan
-              lalu kembali lagi ke bundaran HI!
-            </p>
+            <div>
+              <h2>10K Fun Run</h2>
+              <p>
+                Dimulai pukul 6 pagi, nikmati pemandangan kota di pagi hari
+                dimulai dari Bundaran HI hingga Patung Pemuda Membangun di
+                Senayan lalu kembali lagi ke bundaran HI!
+              </p>
+            </div>
           </div>
 
           <!-- kanan -->
@@ -139,16 +143,71 @@
 
       <!-- support -->
       <section id="support">
-        <div class="bg-gradient py-5">
+        <div class="bg-gradient py-5 overflow-hidden">
           <h1 class="text-center">Didukung Oleh</h1>
-          <div class="mt-4"></div>
+          <ul class="mt-5 px-3 w-100 d-flex gap-4 flex-nowrap">
+            <li>
+              <img src="assets/support/ggv.jpg" alt="golden gate ventures">
+            </li>
+            <li>
+              <img src="assets/support/Alpha-JWC-Ventures.jpg" alt="alpha jwc">
+            </li>
+            <li>
+              <img src="assets/support/500-Global.jpg" alt="500 Global">
+            </li>
+            <li>
+              <img src="assets/support/insignia.jpg" alt="insignia">
+            </li>
+            <li>
+              <img src="assets/support/sequoia.jpg" alt="sequoia">
+            </li>
+            <li>
+              <img src="assets/support/SGInnovate_Logo.jpg" alt="sginnovate">
+            </li>
+            <li>
+              <img src="assets/support/wavemaker.jpg" alt="wavemaker">
+            </li>
+            <li>
+              <img src="assets/support/gfc.jpg" alt="gfc">
+            </li>
+          </ul>
         </div>
       </section>
 
       <!-- galeri -->
       <section id="galeri" class="container">
         <h1 class="text-center mb-5">Galeri Sudirman Run 2022</h1>
-        <div id="main-galeri" class="w-100"></div>
+
+        <div id="main-galeri" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="..." class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#main-galeri"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#main-galeri"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
         <div class="row gap-4 mt-4 px-3">
           <div class="col"></div>
           <div class="col"></div>
@@ -169,109 +228,145 @@
 
         <!-- list artikel -->
         <ul id="artikel" class="w-100">
-          <li>
-            <div class="img-artikel">
-              <img src="assets/ran.jpg" alt="gambar artikel" />
-              <div id="foto">
-                <i class="bi bi-camera-fill"></i>
-                <p class="text-light">5 Foto</p>
+
+          <a
+            href="https://health.detik.com/kebugaran/d-7056398/
+          sukses-finish-marathon-di-jakarta-osha-penyandang-autisme-beberkan-prosesnya"
+            target="_blank"
+            rel="noopener noreferrer">
+            <li>
+              <div class="img-artikel">
+                <img
+                  src="assets/artikel/osha-penyandang-autisme.jpg"
+                  alt="gambar artikel" />
+                <div id="foto">
+                  <i class="bi bi-camera-fill"></i>
+                  <p class="text-light">5 Foto</p>
+                </div>
+                <div id="video">
+                  <i class="bi bi-play-circle-fill"></i>
+                  <p class="text-light">01:45</p>
+                </div>
               </div>
-              <div id="video">
-                <i class="bi bi-play-circle-fill"></i>
-                <p class="text-light">01:45</p>
+              <h3>
+                Sukses Finish Marathon di Jakarta, Osha Penyandang Autisme
+                Beberkan Prosesnya
+              </h3>
+              <p>Sabtu, 25 Nov 2023 20:00 WIB</p>
+            </li>
+          </a>
+
+          <a
+            href="https://health.detik.com/kebugaran/d-7059982/edukasi-lingkungan-hidup-bonus-sehat-di-misi-lestari-2023-see-nature"
+            target="_blank"
+            rel="noopener noreferrer">
+            <li>
+              <div class="img-artikel">
+                <img src="assets/artikel/misi-lestari.jpg" alt="gambar artikel" />
+                <div id="foto">
+                  <i class="bi bi-camera-fill"></i>
+                  <p class="text-light">5 Foto</p>
+                </div>
+                <div id="video">
+                  <i class="bi bi-play-circle-fill"></i>
+                  <p class="text-light">01:45</p>
+                </div>
               </div>
-            </div>
-            <h3>
-              Sukses Finish Marathon di Jakarta, Osha Penyandang Autisme
-              Beberkan Prosesnya
-            </h3>
-            <p>Sabtu, 25 Nov 2023 20:00 WIB</p>
-          </li>
-          <li>
-            <div class="img-artikel">
-              <img src="assets/ran.jpg" alt="gambar artikel" />
-              <div id="foto">
-                <i class="bi bi-camera-fill"></i>
-                <p class="text-light">5 Foto</p>
+              <h3>
+                Edukasi Lingkungan Hidup Bonus Sehat di 'Misi Lestari 2023 : See
+                Nature'
+              </h3>
+              <p>Selasa, 28 Nov 2023 07:42 WIB</p>
+            </li>
+          </a>
+
+          <a
+            href="https://finance.detik.com/berita-ekonomi-bisnis/d-7057159/gokil-puluhan-ribu-orang-ramaikan-pertamina-eco-runfest-2023"
+            target="_blank"
+            rel="noopener noreferrer">
+            <li>
+              <div class="img-artikel">
+                <img src="assets/artikel/pertamina-funfest.jpg" alt="gambar artikel" />
+                <div id="foto">
+                  <i class="bi bi-camera-fill"></i>
+                  <p class="text-light">5 Foto</p>
+                </div>
+                <div id="video">
+                  <i class="bi bi-play-circle-fill"></i>
+                  <p class="text-light">01:45</p>
+                </div>
               </div>
-              <div id="video">
-                <i class="bi bi-play-circle-fill"></i>
-                <p class="text-light">01:45</p>
+              <h3>
+                Gokil! Puluhan Ribu Orang Ramaikan Pertamina Eco RunFest 2023
+              </h3>
+              <p>Minggu, 26 Nov 2023 13:04 WIB</p>
+            </li>
+          </a>
+
+          <a href="#berita">
+            <li>
+              <div class="img-artikel">
+                <img src="assets/artikel/maliq.jpg" alt="gambar artikel" />
+                <div id="foto">
+                  <i class="bi bi-camera-fill"></i>
+                  <p class="text-light">5 Foto</p>
+                </div>
+                <div id="video">
+                  <i class="bi bi-play-circle-fill"></i>
+                  <p class="text-light">01:45</p>
+                </div>
               </div>
-            </div>
-            <h3>
-              Edukasi Lingkungan Hidup Bonus Sehat di 'Misi Lestari 2023 : See
-              Nature'
-            </h3>
-            <p>Selasa, 28 Nov 2023 07:42 WIB</p>
-          </li>
-          <li>
-            <div class="img-artikel">
-              <img src="assets/ran.jpg" alt="gambar artikel" />
-              <div id="foto">
-                <i class="bi bi-camera-fill"></i>
-                <p class="text-light">5 Foto</p>
+              <h3>
+                Kelar Lari di CT Arsa Charity Fun Run, 'Recharge' Energi Nonton
+                Maliq & D'Essentials
+              </h3>
+              <p>Sabtu, 25 Nov 2023 20:00 WIB</p>
+            </li>
+          </a>
+
+          <a
+            href="https://finance.detik.com/berita-ekonomi-bisnis/d-7040527/ct-arsa-charity-fun-run-2023-bertabur-emas"
+            target="_blank"
+            rel="noopener noreferrer">
+            <li>
+              <div class="img-artikel">
+                <img src="assets/artikel/charity-run.jpg" alt="gambar artikel" />
+                <div id="foto">
+                  <i class="bi bi-camera-fill"></i>
+                  <p class="text-light">5 Foto</p>
+                </div>
+                <div id="video">
+                  <i class="bi bi-play-circle-fill"></i>
+                  <p class="text-light">01:45</p>
+                </div>
               </div>
-              <div id="video">
-                <i class="bi bi-play-circle-fill"></i>
-                <p class="text-light">01:45</p>
+              <h3>CT Arsa Charity Fun Run 2023 Bertabur Emas</h3>
+              <p>Kamis, 16 Nov 2023 16:34 WIB</p>
+            </li>
+          </a>
+
+          <a
+            href="https://sport.detik.com/sport-lain/d-7032315/btn-jakarta-run-2023-dorong-dan-geliatkan-sport-tourism-jakarta"
+            target="_blank"
+            rel="noopener noreferrer">
+            <li>
+              <div class="img-artikel">
+                <img src="assets/artikel/btn-run.jpg" alt="gambar artikel" />
+                <div id="foto">
+                  <i class="bi bi-camera-fill"></i>
+                  <p class="text-light">5 Foto</p>
+                </div>
+                <div id="video">
+                  <i class="bi bi-play-circle-fill"></i>
+                  <p class="text-light">01:45</p>
+                </div>
               </div>
-            </div>
-            <h3>
-              Gokil! Puluhan Ribu Orang Ramaikan Pertamina Eco RunFest 2023
-            </h3>
-            <p>Minggu, 26 Nov 2023 13:04 WIB</p>
-          </li>
-          <li>
-            <div class="img-artikel">
-              <img src="assets/ran.jpg" alt="gambar artikel" />
-              <div id="foto">
-                <i class="bi bi-camera-fill"></i>
-                <p class="text-light">5 Foto</p>
-              </div>
-              <div id="video">
-                <i class="bi bi-play-circle-fill"></i>
-                <p class="text-light">01:45</p>
-              </div>
-            </div>
-            <h3>
-              Kelar Lari di CT Arsa Charity Fun Run, 'Recharge' Energi Nonton
-              Maliq & D'Essentials
-            </h3>
-            <p>Sabtu, 25 Nov 2023 20:00 WIB</p>
-          </li>
-          <li>
-            <div class="img-artikel">
-              <img src="assets/ran.jpg" alt="gambar artikel" />
-              <div id="foto">
-                <i class="bi bi-camera-fill"></i>
-                <p class="text-light">5 Foto</p>
-              </div>
-              <div id="video">
-                <i class="bi bi-play-circle-fill"></i>
-                <p class="text-light">01:45</p>
-              </div>
-            </div>
-            <h3>CT Arsa Charity Fun Run 2023 Bertabur Emas</h3>
-            <p>Kamis, 16 Nov 2023 16:34 WIB</p>
-          </li>
-          <li>
-            <div class="img-artikel">
-              <img src="assets/ran.jpg" alt="gambar artikel" />
-              <div id="foto">
-                <i class="bi bi-camera-fill"></i>
-                <p class="text-light">5 Foto</p>
-              </div>
-              <div id="video">
-                <i class="bi bi-play-circle-fill"></i>
-                <p class="text-light">01:45</p>
-              </div>
-            </div>
-            <h3>
-              BTN Jakarta Run 2023 Dorong dan Geliatkan Sport Tourism Jakarta
-            </h3>
-            <p>Minggu, 12 Nov 2023 11:55 WIB</p>
-          </li>
+              <h3>
+                BTN Jakarta Run 2023 Dorong dan Geliatkan Sport Tourism Jakarta
+              </h3>
+              <p>Minggu, 12 Nov 2023 11:55 WIB</p>
+            </li>
+          </a>
         </ul>
 
         <div class="mt-5 text-center">

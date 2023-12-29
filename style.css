@@ -33,7 +33,8 @@ body {
 }
 
 section:not(section#home) {
-  margin-block: 100px;
+  margin-block: 150px;
+  scroll-margin-top: 150px;
 }
 
 /* navbar */
@@ -175,12 +176,40 @@ img[alt="RAN"] {
   scale: 1.1;
 }
 
+#acara #kiri img {
+  width: 100%;
+  flex: 1 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  object-fit: cover;
+  border: 1px solid #ffffff30;
+}
+
 /* support */
 #support h1 {
   font-size: 32px;
   font-weight: 900;
   line-height: 1;
   text-transform: uppercase;
+}
+
+#support ul {
+  animation: scrollHorizontal 10s linear infinite;
+}
+
+#support li {
+  flex: none;
+  width: 300px;
+  height: 150px;
+  border-radius: 12px;
+  padding: 12px 24px;
+  background-color: var(--clr-white);
+}
+
+#support li img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* galeri */
@@ -344,5 +373,12 @@ footer sup {
 @media (min-width: 1024px) {
   ul#artikel {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* animation */
+@keyframes scrollHorizontal {
+  to {
+    transform: translateX(-50%);
   }
 }
