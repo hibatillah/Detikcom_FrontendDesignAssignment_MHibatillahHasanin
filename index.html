@@ -78,6 +78,8 @@
           </div>
           <a href="#acara" class="btn-main">Tentang Acara</a>
         </div>
+
+        <!-- <img src="" alt="people"> -->
       </section>
 
       <!-- acara -->
@@ -145,32 +147,34 @@
       <section id="support">
         <div class="bg-gradient py-5 overflow-hidden">
           <h1 class="text-center">Didukung Oleh</h1>
-          <ul class="mt-5 px-3 w-100 d-flex gap-4 flex-nowrap">
-            <li>
-              <img src="assets/support/ggv.jpg" alt="golden gate ventures">
-            </li>
-            <li>
-              <img src="assets/support/Alpha-JWC-Ventures.jpg" alt="alpha jwc">
-            </li>
-            <li>
-              <img src="assets/support/500-Global.jpg" alt="500 Global">
-            </li>
-            <li>
-              <img src="assets/support/insignia.jpg" alt="insignia">
-            </li>
-            <li>
-              <img src="assets/support/sequoia.jpg" alt="sequoia">
-            </li>
-            <li>
-              <img src="assets/support/SGInnovate_Logo.jpg" alt="sginnovate">
-            </li>
-            <li>
-              <img src="assets/support/wavemaker.jpg" alt="wavemaker">
-            </li>
-            <li>
-              <img src="assets/support/gfc.jpg" alt="gfc">
-            </li>
-          </ul>
+          <div id="scroll-h" class="d-flex mt-5 px-3 w-100">
+            <ul>
+              <li>
+                <img src="assets/support/ggv.jpg" alt="golden gate ventures">
+              </li>
+              <li>
+                <img src="assets/support/Alpha-JWC-Ventures.jpg" alt="alpha jwc">
+              </li>
+              <li>
+                <img src="assets/support/500-Global.jpg" alt="500 Global">
+              </li>
+              <li>
+                <img src="assets/support/insignia.jpg" alt="insignia">
+              </li>
+              <li>
+                <img src="assets/support/sequoia.jpg" alt="sequoia">
+              </li>
+              <li>
+                <img src="assets/support/SGInnovate_Logo.jpg" alt="sginnovate">
+              </li>
+              <li>
+                <img src="assets/support/wavemaker.jpg" alt="wavemaker">
+              </li>
+              <li>
+                <img src="assets/support/gfc.jpg" alt="gfc">
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -239,11 +243,11 @@
                 <img
                   src="assets/artikel/osha-penyandang-autisme.jpg"
                   alt="gambar artikel" />
-                <div id="foto">
+                <div id="foto" class="d-none">
                   <i class="bi bi-camera-fill"></i>
                   <p class="text-light">5 Foto</p>
                 </div>
-                <div id="video">
+                <div id="video" class="d-none">
                   <i class="bi bi-play-circle-fill"></i>
                   <p class="text-light">01:45</p>
                 </div>
@@ -263,11 +267,11 @@
             <li>
               <div class="img-artikel">
                 <img src="assets/artikel/misi-lestari.jpg" alt="gambar artikel" />
-                <div id="foto">
+                <div id="foto" class="d-none">
                   <i class="bi bi-camera-fill"></i>
                   <p class="text-light">5 Foto</p>
                 </div>
-                <div id="video">
+                <div id="video" class="d-none">
                   <i class="bi bi-play-circle-fill"></i>
                   <p class="text-light">01:45</p>
                 </div>
@@ -287,11 +291,11 @@
             <li>
               <div class="img-artikel">
                 <img src="assets/artikel/pertamina-funfest.jpg" alt="gambar artikel" />
-                <div id="foto">
+                <div id="foto" class="d-none">
                   <i class="bi bi-camera-fill"></i>
                   <p class="text-light">5 Foto</p>
                 </div>
-                <div id="video">
+                <div id="video" class="d-none">
                   <i class="bi bi-play-circle-fill"></i>
                   <p class="text-light">01:45</p>
                 </div>
@@ -307,11 +311,11 @@
             <li>
               <div class="img-artikel">
                 <img src="assets/artikel/maliq.jpg" alt="gambar artikel" />
-                <div id="foto">
+                <div id="foto" class="d-none">
                   <i class="bi bi-camera-fill"></i>
                   <p class="text-light">5 Foto</p>
                 </div>
-                <div id="video">
+                <div id="video" class="d-none">
                   <i class="bi bi-play-circle-fill"></i>
                   <p class="text-light">01:45</p>
                 </div>
@@ -331,11 +335,11 @@
             <li>
               <div class="img-artikel">
                 <img src="assets/artikel/charity-run.jpg" alt="gambar artikel" />
-                <div id="foto">
+                <div id="foto" class="d-none">
                   <i class="bi bi-camera-fill"></i>
                   <p class="text-light">5 Foto</p>
                 </div>
-                <div id="video">
+                <div id="video" class="d-none">
                   <i class="bi bi-play-circle-fill"></i>
                   <p class="text-light">01:45</p>
                 </div>
@@ -352,11 +356,11 @@
             <li>
               <div class="img-artikel">
                 <img src="assets/artikel/btn-run.jpg" alt="gambar artikel" />
-                <div id="foto">
+                <div id="foto" class="d-none">
                   <i class="bi bi-camera-fill"></i>
                   <p class="text-light">5 Foto</p>
                 </div>
-                <div id="video">
+                <div id="video" class="d-none">
                   <i class="bi bi-play-circle-fill"></i>
                   <p class="text-light">01:45</p>
                 </div>
@@ -381,7 +385,8 @@
       </section>
     </main>
 
-    <footer class="w-100">
+    <footer>
+      <img src="assets/building.jpg" alt="building">
       <div class="content">
         <h1 class="fst-italic text-uppercase text-light">
           Sudirman <br />
@@ -399,9 +404,15 @@
             menangkan hadiah utama serta doorprize dengan total puluhan juta
             rupiah.
           </p>
-          <div class="text-center">
+          <div class="text-center w-25">
             <p>Connect With Us</p>
-            <div class="d-flex"></div>
+            <ul id="socials" class="d-flex gap-2 justify-content-center fs-5">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
           </div>
         </div>
         <hr class="text-light my-4" />
@@ -415,5 +426,6 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"></script>
+    <script src="script.js"></script>
   </body>
 </html>

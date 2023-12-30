@@ -1,14 +1,35 @@
-// horizontal scroll
-const hscroll = document.querySelector('#support ul');
+//=== horizontal scroll ===/
+const scrollContainer = document.querySelector('#scroll-h');
+const itemScroll = document.querySelector('#scroll-h ul').cloneNode(true)
 
-if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) scrollHorizontal()
+scrollContainer.appendChild(itemScroll)
 
-const scrollHorizontal = () => {
-  const itemScroll = document.querySelectorAll('#support ul li');
+//=== tab berita ===//
+const tabBerita = document.querySelectorAll('#berita ul#tab li')
+const fotoBerita = document.querySelectorAll('ul#artikel li #foto')
+const videoBerita = document.querySelectorAll('ul#artikel li #video')
 
-  itemScroll.forEach((item) => {
-    const duplicateItem = item.cloneNode(true)
-    duplicateItem.setAttribute('aria-hidden', true)
-    hscroll.appendChild(duplicateItem);
+tabBerita.forEach((tab, index) => {
+  tab.addEventListener('click', () => {
+    tabBerita.forEach((item) => {
+      item.classList.remove('active')
+    })
+    tab.classList.add('active')
+
+    // active foto & video
+    fotoBerita.forEach((foto) => {
+      videoBerita.forEach((video) => {
+        if (index == 1) {
+          foto.classList.remove('d-none')
+          video.classList.add('d-none')
+        } else if (index == 2) {
+          foto.classList.add('d-none')
+          video.classList.remove('d-none')
+        } else {
+          foto.classList.add('d-none')
+          video.classList.add('d-none')
+        }
+      })
+    })
   })
-}
+})
