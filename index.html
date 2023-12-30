@@ -21,16 +21,6 @@
       <a class="navbar-brand" href="#">
         <img src="assets/logo.png" alt="Logo Detik Health" />
       </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-        aria-controls="navbarCollapse"
-        aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -62,6 +52,16 @@
           </li>
         </ul>
       </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </nav>
 
     <main>
@@ -72,7 +72,7 @@
             <div>Sudirman</div>
             <div>Run 2023</div>
           </h1>
-          <div id="presented">
+          <div id="presented" class="d-flex flex-column flex-lg-row">
             <p class="text-black">Presented by</p>
             <img src="assets/logo.png" alt="logo detik health" />
           </div>
@@ -83,13 +83,15 @@
       </section>
 
       <!-- acara -->
-      <section id="acara" class="container mx-auto p-5">
-        <div class="row g-5">
+      <section id="acara" class="container mx-auto p-lg-5">
+        <div class="acara-grid px-lg-5">
           <!-- kiri -->
           <div
             id="kiri"
-            class="col-12 col-md-6 d-flex flex-column gap-4 p-4 bg-gradient rounded-4">
-            <img src="" alt="" />
+            class="d-flex flex-column gap-4 p-4 bg-gradient rounded-4">
+            <div class="img-rute">
+              <img src="" alt="rute" />
+            </div>
             <div>
               <h2>10K Fun Run</h2>
               <p>
@@ -101,7 +103,7 @@
           </div>
 
           <!-- kanan -->
-          <div class="col-12 col-md-6 d-flex flex-column">
+          <div class="d-flex flex-column gap-3">
             <div class="p-4 bg-gradient rounded-4">
               <h2>Gratis dan Berhadiah</h2>
               <p>
@@ -109,7 +111,7 @@
                 total puluhan juta rupiah doorprize menarik!
               </p>
             </div>
-            <div class="p-4 bg-gradient rounded-4 my-3">
+            <div class="p-4 bg-gradient rounded-4">
               <h2>50+ Tenant Bazzar</h2>
               <p>
                 Dapatkan promo menarik pada booth-booth tenant bazzar Sudirman
@@ -150,28 +152,32 @@
           <div id="scroll-h" class="d-flex mt-5 px-3 w-100">
             <ul>
               <li>
-                <img src="assets/support/ggv.jpg" alt="golden gate ventures">
+                <img src="assets/support/ggv.jpg" alt="golden gate ventures" />
               </li>
               <li>
-                <img src="assets/support/Alpha-JWC-Ventures.jpg" alt="alpha jwc">
+                <img
+                  src="assets/support/Alpha-JWC-Ventures.jpg"
+                  alt="alpha jwc" />
               </li>
               <li>
-                <img src="assets/support/500-Global.jpg" alt="500 Global">
+                <img src="assets/support/500-Global.jpg" alt="500 Global" />
               </li>
               <li>
-                <img src="assets/support/insignia.jpg" alt="insignia">
+                <img src="assets/support/insignia.jpg" alt="insignia" />
               </li>
               <li>
-                <img src="assets/support/sequoia.jpg" alt="sequoia">
+                <img src="assets/support/sequoia.jpg" alt="sequoia" />
               </li>
               <li>
-                <img src="assets/support/SGInnovate_Logo.jpg" alt="sginnovate">
+                <img
+                  src="assets/support/SGInnovate_Logo.jpg"
+                  alt="sginnovate" />
               </li>
               <li>
-                <img src="assets/support/wavemaker.jpg" alt="wavemaker">
+                <img src="assets/support/wavemaker.jpg" alt="wavemaker" />
               </li>
               <li>
-                <img src="assets/support/gfc.jpg" alt="gfc">
+                <img src="assets/support/gfc.jpg" alt="gfc" />
               </li>
             </ul>
           </div>
@@ -212,7 +218,9 @@
           </button>
         </div>
 
-        <div class="row gap-4 mt-4 px-3">
+        <div
+          id="second-galeri"
+          class="d-flex flex-column flex-md-row gap-3 gap-4 mt-4">
           <div class="col"></div>
           <div class="col"></div>
           <div class="col"></div>
@@ -232,7 +240,6 @@
 
         <!-- list artikel -->
         <ul id="artikel" class="w-100">
-
           <a
             href="https://health.detik.com/kebugaran/d-7056398/
           sukses-finish-marathon-di-jakarta-osha-penyandang-autisme-beberkan-prosesnya"
@@ -266,7 +273,9 @@
             rel="noopener noreferrer">
             <li>
               <div class="img-artikel">
-                <img src="assets/artikel/misi-lestari.jpg" alt="gambar artikel" />
+                <img
+                  src="assets/artikel/misi-lestari.jpg"
+                  alt="gambar artikel" />
                 <div id="foto" class="d-none">
                   <i class="bi bi-camera-fill"></i>
                   <p class="text-light">5 Foto</p>
@@ -290,7 +299,9 @@
             rel="noopener noreferrer">
             <li>
               <div class="img-artikel">
-                <img src="assets/artikel/pertamina-funfest.jpg" alt="gambar artikel" />
+                <img
+                  src="assets/artikel/pertamina-funfest.jpg"
+                  alt="gambar artikel" />
                 <div id="foto" class="d-none">
                   <i class="bi bi-camera-fill"></i>
                   <p class="text-light">5 Foto</p>
@@ -334,7 +345,9 @@
             rel="noopener noreferrer">
             <li>
               <div class="img-artikel">
-                <img src="assets/artikel/charity-run.jpg" alt="gambar artikel" />
+                <img
+                  src="assets/artikel/charity-run.jpg"
+                  alt="gambar artikel" />
                 <div id="foto" class="d-none">
                   <i class="bi bi-camera-fill"></i>
                   <p class="text-light">5 Foto</p>
@@ -386,7 +399,7 @@
     </main>
 
     <footer>
-      <img src="assets/building.jpg" alt="building">
+      <img src="assets/building.jpg" alt="building" />
       <div class="content">
         <h1 class="fst-italic text-uppercase text-light">
           Sudirman <br />
@@ -396,23 +409,59 @@
           <sup class="fst-italic">Presented by</sup>
           <span class="fw-semibold">detik</span>health
         </p>
-        <div class="d-flex text-light align-items-start">
-          <p class="mt-4">
+        <div
+          class="row text-light">
+          <p class="col-12 col-md-8 col-lg-10 mt-4">
             Event olahraga lari sejauh 10 kilometer yang diselenggarakan oleh
             Detikhealth secara gratis untuk masyarakat Indonesia. Ajak keluarga
             dan kerabat anda untuk ikut keseruan Sudirman Run 2023 lalu
             menangkan hadiah utama serta doorprize dengan total puluhan juta
             rupiah.
           </p>
-          <div class="text-center w-25">
+          <div class="col-12 col-md-4 col-lg-2 text-center">
             <p>Connect With Us</p>
-            <ul id="socials" class="d-flex gap-2 justify-content-center fs-5">
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
+            <div id="socials" class="d-flex gap-2 justify-content-center fs-5">
+              <a
+                href="https://www.facebook.com/detikHealth/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img
+                  src="assets/socials/facebook-f.svg"
+                  alt="facebook detikhealth" />
+              </a>
+              <a
+                href="https://twitter.com/detikHealth"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img
+                  src="assets/socials/x-twitter.svg"
+                  alt="twitter detikhealth" />
+              </a>
+              <a
+                href="https://www.instagram.com/detikhealth"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img
+                  src="assets/socials/instagram.svg"
+                  alt="instagram detikhealth" />
+              </a>
+              <a
+                href="https://id.linkedin.com/company/detik-com"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img
+                  src="assets/socials/linkedin-in.svg"
+                  alt="linkedin detikhealth" />
+              </a>
+              <a
+                href="http://www.youtube.com/@detikhealthy"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img
+                  src="assets/socials/youtube.svg"
+                  alt="youtube detikhealth" />
+              </a>
+            </div>
           </div>
         </div>
         <hr class="text-light my-4" />
