@@ -84,7 +84,7 @@
 
       <!-- acara -->
       <section id="acara" class="container mx-auto p-lg-5">
-        <div class="acara-grid px-lg-5">
+        <div class="acara-grid">
           <!-- kiri -->
           <div
             id="kiri"
@@ -188,42 +188,27 @@
       <section id="galeri" class="container">
         <h1 class="text-center mb-5">Galeri Sudirman Run 2022</h1>
 
-        <div id="main-galeri" class="carousel slide carousel-fade">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="..." class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="..." />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#main-galeri"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#main-galeri"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+        <div
+          id="main-galeri"
+          class="d-none d-md-block carousel slide carousel-fade">
+          <img src="assets/galeri/galeri-1.jpg" alt="galeri-show" />
+          <i id="prev" class="bi bi-arrow-left-circle-fill"></i>
+          <i id="next" class="bi bi-arrow-right-circle-fill"></i>
         </div>
 
-        <div
-          id="second-galeri"
-          class="d-flex flex-column flex-md-row gap-3 gap-4 mt-4">
-          <div class="col"></div>
-          <div class="col"></div>
-          <div class="col"></div>
+        <div id="second-galeri" class="mt-4">
+          <div class="active">
+            <img src="/assets/galeri/galeri-1.jpg" alt="galeri" />
+          </div>
+          <div>
+            <img src="/assets/galeri/galeri-2.jpg" alt="galeri" />
+          </div>
+          <div>
+            <img src="/assets/galeri/galeri-3.jpg" alt="galeri" />
+          </div>
+          <div>
+            <img src="/assets/galeri/galeri-4.jpg" alt="galeri" />
+          </div>
         </div>
       </section>
 
@@ -405,13 +390,12 @@
           Sudirman <br />
           Run 2023
         </h1>
-        <p class="text-light mt-2">
+        <p class="text-light mt-3">
           <sup class="fst-italic">Presented by</sup>
           <span class="fw-semibold">detik</span>health
         </p>
-        <div
-          class="row text-light">
-          <p class="col-12 col-md-8 col-lg-10 mt-4">
+        <div class="row text-light">
+          <p class="col-12 col-md-8 col-lg-10 mb-4 mt-0 mb-md-0 mt-lg-3">
             Event olahraga lari sejauh 10 kilometer yang diselenggarakan oleh
             Detikhealth secara gratis untuk masyarakat Indonesia. Ajak keluarga
             dan kerabat anda untuk ikut keseruan Sudirman Run 2023 lalu
