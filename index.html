@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="/_vercel/insights/script.js"></script>
   </head>
   <body>
     <!-- navbar -->
@@ -188,12 +189,45 @@
       <section id="galeri" class="container">
         <h1 class="text-center mb-5">Galeri Sudirman Run 2022</h1>
 
-        <div
+        <!-- <div
           id="main-galeri"
           class="d-none d-md-block carousel slide carousel-fade">
           <img src="assets/galeri/galeri-1.jpg" alt="galeri-show" />
           <i id="prev" class="bi bi-arrow-left-circle-fill"></i>
           <i id="next" class="bi bi-arrow-right-circle-fill"></i>
+        </div> -->
+
+        <div id="main-galeri" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/assets/galeri/galeri-1.jpg" class="d-block w-100" alt="galeri-1" />
+            </div>
+            <div class="carousel-item">
+              <img src="/assets/galeri/galeri-2.jpg" class="d-block w-100" alt="galeri-2" />
+            </div>
+            <div class="carousel-item">
+              <img src="/assets/galeri/galeri-3.jpg" class="d-block w-100" alt="galeri-3" />
+            </div>
+            <div class="carousel-item">
+              <img src="/assets/galeri/galeri-4.jpg" class="d-block w-100" alt="galeri-4" />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#main-galeri"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#main-galeri"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
 
         <div id="second-galeri" class="mt-4">

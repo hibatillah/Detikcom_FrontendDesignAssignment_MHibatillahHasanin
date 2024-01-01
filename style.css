@@ -293,7 +293,8 @@ img[alt="RAN"] {
   border-radius: 12px;
   overflow: hidden;
   background-color: var(--clr-primary);
-  filter: grayscale(70%);
+  filter: grayscale(90%);
+  cursor: pointer;
 }
 
 #second-galeri .active {
