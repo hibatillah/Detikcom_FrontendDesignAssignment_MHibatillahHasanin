@@ -1,10 +1,10 @@
-//=== horizontal scroll ===/
+//==== horizontal scroll ====/
 const scrollContainer = document.querySelector("#scroll-h");
 const itemScroll = document.querySelector("#scroll-h ul").cloneNode(true);
 
 scrollContainer.appendChild(itemScroll);
 
-//=== tab berita ===//
+//==== tab berita ====//
 const tabBerita = document.querySelectorAll("#berita ul#tab li");
 const fotoBerita = document.querySelectorAll("ul#artikel li #foto");
 const videoBerita = document.querySelectorAll("ul#artikel li #video");
@@ -35,46 +35,53 @@ tabBerita.forEach((tab, index) => {
   });
 });
 
-//=== galeri ===//
+//==== galeri ====//
 const carousel = document.querySelectorAll(".carousel-item");
-const galeri = document.querySelectorAll("#second-galeri img");
+const galeri = document.querySelectorAll("#second-galeri li");
+let activeGaleri;
 
-carousel.forEach((item, index) => {
-  if (item.classList.contains('active')) {
-    galeri.forEach(gal => {
-      gal.parentElement.classList.remove('active');
+const getActiveCarousel = (ref) => {
+  carousel.forEach((item, index) => {
+    if (item.classList.contains("active")) {
+      ref == 'prev'
+        ? activeGaleri = index - 1
+        : activeGaleri = index + 1
 
-      if (index == 0) {
-        gal[index].classList.add('active');
-      } else if (index == 1) {
-        gal[index].classList.add('active');
-      } else if (index == 2) {
-        gal[index].classList.add('active');
-      } else {
-        gal[index].classList.add('active');
-      }
-    })
-  }
-})
+      if (activeGaleri == 4) activeGaleri = 0;
+      if (activeGaleri == -1) activeGaleri = 3;
 
-// spesific galeri clicked
-galeri.forEach((item, index) => {
-  item.addEventListener("click", (el) => {
-    // remove active
-    galeri.forEach((ex) => {
-      ex.parentElement.classList.remove("active");
+      console.log(activeGaleri);
+
+      // add active state to galeri that show on carousel
+      galeri.forEach((li, i) => {
+        li.classList.remove("active");
+        if (i == activeGaleri) li.classList.add("active");
+      });
+    }
+  });
+};
+
+
+document.querySelector('[data-bs-slide="prev"]').addEventListener("click", () => getActiveCarousel('prev'))
+
+document.querySelector('[data-bs-slide="next"]').addEventListener("click", () => getActiveCarousel('next'))
+
+// click spesific galeri
+galeri.forEach((gal, galIndex) => {
+  gal.addEventListener("click", () => {
+
+    galeri.forEach((li, liIndex) => {
+      // remove active galeri
+      li.classList.remove("active");
+
+      // add active galeri same to clicked element
+      if (liIndex == galIndex) li.classList.add("active");
     });
 
     // add active to clicked element
-    el.target.parentElement.classList.add("active");
-    if (index == 0) {
-      mainGaleri.src = galeri1;
-    } else if (index == 1) {
-      mainGaleri.src = galeri2;
-    } else if (index == 2) {
-      mainGaleri.src = galeri3;
-    } else {
-      mainGaleri.src = galeri4;
-    }
+    carousel.forEach((item, cIndex) => {
+      item.classList.remove("active");
+      if (galIndex == cIndex) item.classList.add("active");
+    });
   });
 });

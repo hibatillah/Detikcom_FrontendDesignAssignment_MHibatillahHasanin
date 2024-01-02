@@ -207,6 +207,17 @@ img[alt="RAN"] {
   border: 1px solid #ffffff30;
 }
 
+.img-rute img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+}
+
+#acara #kiri:hover .img-rute img {
+  scale: 1.2;
+}
+
 /*==== support ====*/
 #support h1 {
   font-size: 32px;
@@ -288,13 +299,16 @@ img[alt="RAN"] {
   gap: 20px;
 }
 
-#second-galeri > * {
+#second-galeri li {
   aspect-ratio: 16/9;
   border-radius: 12px;
   overflow: hidden;
   background-color: var(--clr-primary);
-  filter: grayscale(90%);
   cursor: pointer;
+}
+
+#second-galeri li:nth-child(4) {
+  filter: contrast(1.3);
 }
 
 #second-galeri .active {
@@ -305,6 +319,24 @@ img[alt="RAN"] {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+[data-bs-target="#main-galeri"] {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+  aspect-ratio: 1/1;
+  opacity: 0.2;
+  border-radius: 100%;
+}
+
+[data-bs-slide="prev"] {
+  left: 20px;
+}
+
+[data-bs-slide="next"] {
+  right: 20px;
 }
 
 /*==== berita ====*/
@@ -498,6 +530,7 @@ footer img[alt="building"] {
 }
 
 /*==== responsive ====*/
+/* sm */
 @media (min-width: 576px) {
   nav.navbar {
     width: 80vw;
@@ -526,6 +559,7 @@ footer img[alt="building"] {
 
   #acara .flex-column div:nth-child(3) {
     max-height: max-content;
+    align-items: center;
   }
 
   #acara .performance-img {
@@ -533,6 +567,7 @@ footer img[alt="building"] {
   }
 }
 
+/* md */
 @media (min-width: 768px) {
   nav.navbar {
     width: 80vw;
@@ -592,6 +627,10 @@ footer img[alt="building"] {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  #second-galeri li {
+    filter: grayscale(90%);
+  }
+
   ul#artikel {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 40px;
@@ -611,6 +650,7 @@ footer img[alt="building"] {
   }
 }
 
+/* lg */
 @media (min-width: 1024px) {
   #home h1 {
     font-size: 100px;
@@ -642,6 +682,14 @@ footer img[alt="building"] {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  [data-bs-slide="prev"] {
+    left: 50px;
+  }
+
+  [data-bs-slide="next"] {
+    right: 50px;
+  }
+
   ul#artikel {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -651,6 +699,7 @@ footer img[alt="building"] {
   }
 }
 
+/* xl */
 @media screen and (min-width: 1280px) {
   nav.navbar {
     width: 60vw;
