@@ -85,3 +85,18 @@ galeri.forEach((gal, galIndex) => {
     });
   });
 });
+
+//==== navbar behavior for mobile ====//
+const navbar = document.querySelector("nav.navbar");
+
+document.querySelector('[data-bs-toggle="collapse"]').addEventListener("click", () => {
+  if (navbar.classList.contains("rounded-pill")) {
+    navbar.classList.remove("rounded-pill");
+    navbar.classList.add("rounded-4");
+  } else {
+    setTimeout(() => {
+      navbar.classList.remove("rounded-4");
+      navbar.classList.add("rounded-pill");
+    }, 400);
+  }
+});

@@ -16,53 +16,57 @@
     <script defer src="/_vercel/insights/script.js"></script>
   </head>
   <body>
+
     <!-- navbar -->
     <nav
-      class="navbar navbar-expand-lg d-flex justify-content-between fixed-top rounded-pill px-4 py-3 shadow-sm">
-      <a class="navbar-brand" href="#">
-        <img src="assets/logo.png" alt="Logo Detik Health" />
-      </a>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav">
+      class="navbar navbar-expand-lg d-block d-lg-flex justify-content-between fixed-top rounded-pill px-4 py-3 shadow-sm trans">
+      <div class="d-flex justify-content-between">
+        <a class="navbar-brand" href="#">
+          <img src="assets/logo.png" alt="Logo Detik Health" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse mt-3 mt-lg-0" id="navbarCollapse">
+        <ul class="navbar-nav gap-1">
           <li class="nav-item">
-            <a class="nav-link rounded-pill px-4 pt-3 pb-4" href="#home">
-              Home
+            <a class="nav-link rounded-pill px-4" href="#home">
+              <span> Home </span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link rounded-pill px-4 pt-3 pb-4" href="#acara">
-              Tentang Acara
+            <a class="nav-link rounded-pill px-4" href="#acara">
+              <span> Tentang Acara </span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link rounded-pill px-4 pt-3 pb-4" href="#galeri">
-              Galeri
+            <a class="nav-link rounded-pill px-4" href="#galeri">
+              <span> Galeri </span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link rounded-pill px-4 pt-3 pb-4" href="#berita">
-              Berita
+            <a class="nav-link rounded-pill px-4" href="#berita">
+              <span> Berita </span>
             </a>
           </li>
-          <li class="nav-item ms-2">
+          <li class="nav-item">
             <a
-              class="nav-link rounded-pill px-4 pt-3 pb-4 bg-gradient"
-              href="https://event.detik.com/">
-              Registrasi
+              class="nav-link rounded-pill text-light px-4 bg-gradient"
+              href="https://event.detik.com/"
+              target="_blank">
+              <span> Registrasi </span>
             </a>
           </li>
         </ul>
       </div>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-        aria-controls="navbarCollapse"
-        aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
     </nav>
 
     <main>
@@ -189,7 +193,9 @@
       <section id="galeri" class="container">
         <h1 class="text-center mb-5">Galeri Sudirman Run 2022</h1>
 
-        <div id="main-galeri" class="carousel slide carousel-fade border d-none d-md-block">
+        <div
+          id="main-galeri"
+          class="carousel slide carousel-fade border d-none d-md-block">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
@@ -229,16 +235,16 @@
         </div>
 
         <ul id="second-galeri" class="mt-4">
-          <li class="active">
+          <li class="border active">
             <img src="/assets/galeri/galeri-1.jpg" alt="galeri" />
           </li>
-          <li>
+          <li class="border">
             <img src="/assets/galeri/galeri-2.jpg" alt="galeri" />
           </li>
-          <li>
+          <li class="border">
             <img src="/assets/galeri/galeri-3.jpg" alt="galeri" />
           </li>
-          <li>
+          <li class="border">
             <img src="/assets/galeri/galeri-4.jpg" alt="galeri" />
           </li>
         </ul>
@@ -417,6 +423,8 @@
 
     <footer>
       <img src="assets/building.jpg" alt="building" />
+      <img src="assets/footer-vector.png" alt="vector-left" />
+      <img src="assets/footer-vector.png" alt="vector-right" />
       <div class="content">
         <h1 class="fst-italic text-uppercase text-light">
           Sudirman <br />
